@@ -96,7 +96,7 @@ const Game = () => {
       </Typography>
       <div className={'game-wrapper'}>
         <img style={{
-          left: gameStage * 13.5 - 20 + '%'
+          left: gameStage ? gameStage * 13.5 - 20 + '%' : 0,
         }} className={'game-img game-img_nastya'} src={nIcon} alt=""/>
         <img className={'game-img game-img_arab'} src={aIcon} alt=""/>
       </div>
